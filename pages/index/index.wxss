@@ -1,0 +1,76 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 64px;
+  height: 64px;
+  margin: 10px;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+  text-align: center;
+}
+
+/** 页面底部的tab **/
+.tab-nav {
+  width: 100%;
+  height: 30px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: #fff;
+}
+
+.tab-nav-list {
+  width: 100%;
+  height: 30px;
+  float: left;
+}
+
+.tab-nav-index,
+.tab-nav-follow,
+.tab-nav-find,
+.tab-nav-mine {
+  width: 25%;
+  height: 30px;
+  font-size: 12px;
+  text-align: center;
+  list-style: none;
+  float: left;
+}
+/** 背景图片需要改成网络资源或者此图片字节在dom上用image标签显示 **/
+.tab-nav-index {
+  background-image: url("/assest/images/home.png");
+}
+.tab-nav-follow {
+  background-image: url("/assest/images/follow.png");
+}
+.tab-nav-find {
+  background-image: url("/assest/images/find.png");
+}
+.tab-nav-mine {
+  background-image: url("/assest/images/mine.png");
+}
+
+.tab-nav-index.active {
+  background-image: url("/assest/images/home-active.png");
+}
+.tab-nav-follow.active {
+  background-image: url("/assest/images/follow-active.png");
+}
+.tab-nav-find.active {
+  background-image: url("/assest/images/find-active.png");
+}
+.tab-nav-mine.active {
+  background-image: url("/assest/images/mine-active.png");
+}
