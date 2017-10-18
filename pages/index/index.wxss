@@ -24,7 +24,7 @@
 /** 页面底部的tab **/
 .tab-nav {
   width: 100%;
-  height: 30px;
+  height: 40px;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -33,7 +33,8 @@
 
 .tab-nav-list {
   width: 100%;
-  height: 30px;
+  height: 40px;
+  border-top: 1px solid #ccc;
   float: left;
 }
 
@@ -42,35 +43,64 @@
 .tab-nav-find,
 .tab-nav-mine {
   width: 25%;
-  height: 30px;
+  height: 40px;
   font-size: 12px;
+  color: #666;
+  line-height: 58px;
   text-align: center;
   list-style: none;
   float: left;
+  position: relative;
+}
+.nav-index-icon,
+.nav-follow-icon,
+.nav-find-icon,
+.nav-mine-icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 4px;
+  left: 50%;
+  margin-left: -8px;
 }
 /** 背景图片需要改成网络资源或者此图片字节在dom上用image标签显示 **/
-.tab-nav-index {
-  background-image: url("/assest/images/home.png");
+.nav-index-icon {
+  background-image: url("http://opoze7s40.bkt.clouddn.com/eye-home.png");
 }
-.tab-nav-follow {
-  background-image: url("/assest/images/follow.png");
+.nav-follow-icon {
+  background-image: url("http://opoze7s40.bkt.clouddn.com/eye-follow.png");
 }
-.tab-nav-find {
-  background-image: url("/assest/images/find.png");
+.nav-find-icon {
+  background-image: url("http://opoze7s40.bkt.clouddn.com/eye-find.png");
 }
-.tab-nav-mine {
-  background-image: url("/assest/images/mine.png");
+.nav-mine-icon {
+  background-image: url("http://opoze7s40.bkt.clouddn.com/eye-mine.png");
 }
 
-.tab-nav-index.active {
-  background-image: url("/assest/images/home-active.png");
+.nav-index-icon.active,
+.nav-follow-icon.active,
+.nav-find-icon.active,
+.nav-mine-icon.active {
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 4px;
+  left: 50%;
+  margin-left: -8px;
 }
-.tab-nav-follow.active {
-  background-image: url("/assest/images/follow-active.png");
+
+.nav-index-icon.active {
+  background-image: url("http://opoze7s40.bkt.clouddn.com/eye-home-active.png");
 }
-.tab-nav-find.active {
-  background-image: url("/assest/images/find-active.png");
+.nav-follow-icon.active {
+  background-image: url("http://opoze7s40.bkt.clouddn.com/eye-follow-active.png");
 }
-.tab-nav-mine.active {
-  background-image: url("/assest/images/mine-active.png");
+.nav-find-icon.active {
+  background-image: url("http://opoze7s40.bkt.clouddn.com/eye-find-active.png");
+}
+.nav-mine-icon.active {
+  background-image: url("http://opoze7s40.bkt.clouddn.com/eye-mine-active.png");
 }

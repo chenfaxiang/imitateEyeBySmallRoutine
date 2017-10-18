@@ -12,10 +12,22 @@
   </view>
   <view class="tab-nav">
     <ul class="tab-nav-list">
-      <li class="tab-nav-index active">首页</li>
-      <li class="tab-nav-follow">关注</li>
-      <li class="tab-nav-find">发现</li>
-      <li class="tab-nav-mine">我的</li>
+      <li class="tab-nav-index">
+        <i class="nav-index-icon active"></i>
+        首页
+      </li>
+      <li class="tab-nav-follow">
+        <i class="nav-follow-icon"></i>
+        关注
+      </li>
+      <li class="tab-nav-find">
+        <i class="nav-find-icon"></i>
+        发现
+      </li>
+      <li class="tab-nav-mine">
+        <i class="nav-mine-icon"></i>
+        我的
+      </li>
     </ul>
   </view>
 </view>
