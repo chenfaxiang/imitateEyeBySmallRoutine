@@ -49,6 +49,7 @@
   line-height: 58px;
   text-align: center;
   list-style: none;
+  cursor: pointer;
   float: left;
   position: relative;
 }

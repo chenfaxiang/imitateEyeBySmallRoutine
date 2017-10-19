@@ -7,13 +7,56 @@ Page({
     motto: 'Start imitate the eye app',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    isHomeActive: true,
+    isFollowActive: false,
+    isFindActive: false,
+    isMineActive: false
   },
   //事件处理函数
   bindViewTap: function() {
     wx.navigateTo({
       url: '../logs/logs'
     })
+  },
+  /**
+   * 首页nav切换事件
+   */
+  navSwitchSelected: function (eve) {
+    switch (eve.currentTarget.dataset.id) {
+      case '1':
+        this.setData({
+          isHomeActive: true,
+          isFollowActive: false,
+          isFindActive: false,
+          isMineActive: false
+        });
+        break;
+      case '2':
+        this.setData({
+          isHomeActive: false,
+          isFollowActive: true,
+          isFindActive: false,
+          isMineActive: false
+        });
+        break;
+      case '3':
+        this.setData({
+          isHomeActive: false,
+          isFollowActive: false,
+          isFindActive: true,
+          isMineActive: false
+        });
+        break;
+      default:
+        this.setData({
+          isHomeActive: false,
+          isFollowActive: false,
+          isFindActive: false,
+          isMineActive: true
+        });
+        break;
+    }
   },
   onLoad: function () {
     if (app.globalData.userInfo) {

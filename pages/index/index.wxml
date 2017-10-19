@@ -12,20 +12,20 @@
   </view>
   <view class="tab-nav">
     <ul class="tab-nav-list">
-      <li class="tab-nav-index">
-        <i class="nav-index-icon active"></i>
+      <li class="tab-nav-index" data-id="1" bindtap="navSwitchSelected">
+        <i class="nav-index-icon {{isHomeActive ? 'active' : ''}}"></i>
         首页
       </li>
-      <li class="tab-nav-follow">
-        <i class="nav-follow-icon"></i>
+      <li class="tab-nav-follow" data-id="2" bindtap="navSwitchSelected">
+        <i class="nav-follow-icon {{isFollowActive ? 'active' : ''}}"></i>
         关注
       </li>
-      <li class="tab-nav-find">
-        <i class="nav-find-icon"></i>
+      <li class="tab-nav-find" data-id="3" bindtap="navSwitchSelected">
+        <i class="nav-find-icon {{isFindActive ? 'active' : ''}}"></i>
         发现
       </li>
-      <li class="tab-nav-mine">
-        <i class="nav-mine-icon"></i>
+      <li class="tab-nav-mine" data-id="4" bindtap="navSwitchSelected">
+        <i class="nav-mine-icon {{isMineActive ? 'active' : ''}}"></i>
         我的
       </li>
     </ul>
