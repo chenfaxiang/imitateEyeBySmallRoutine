@@ -31,6 +31,7 @@ Page({
           isFindActive: false,
           isMineActive: false
         });
+        this.switchTabNav('../index/index');
         break;
       case '2':
         this.setData({
@@ -39,6 +40,7 @@ Page({
           isFindActive: false,
           isMineActive: false
         });
+        this.switchTabNav('../follow/follow');
         break;
       case '3':
         this.setData({
@@ -47,6 +49,7 @@ Page({
           isFindActive: true,
           isMineActive: false
         });
+        this.switchTabNav('../find/find');
         break;
       default:
         this.setData({
@@ -55,8 +58,17 @@ Page({
           isFindActive: false,
           isMineActive: true
         });
+        this.switchTabNav('../mine/mine');
         break;
     }
+  },
+  /**
+   * 切换tabNav事件
+   */
+  switchTabNav: function (goToPageUrl) {
+    wx.navigateTo({
+      url: goToPageUrl
+    });
   },
   onLoad: function () {
     if (app.globalData.userInfo) {

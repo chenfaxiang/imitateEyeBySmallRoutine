@@ -1,0 +1,4 @@
+<!--follow.wxml-->
+<view class="container">
+  {{followData}}
+</view>

@@ -1,0 +1,4 @@
+<!--find.wxml-->
+<view class="container">
+  {{findData}}
+</view>
