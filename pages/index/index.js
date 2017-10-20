@@ -1,5 +1,3 @@
-//index.js
-//获取应用实例
 const app = getApp();
 
 Page({
@@ -7,21 +5,22 @@ Page({
     motto: 'Start imitate the eye app',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo'),
-    isHomeActive: true,
-    isFollowActive: false,
-    isFindActive: false,
-    isMineActive: false
+    canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
+  /*
+   isHomeActive: true,
+   isFollowActive: false,
+   isFindActive: false,
+   isMineActive: false
+   */
   //事件处理函数
   bindViewTap: function() {
     wx.navigateTo({
       url: '../logs/logs'
     })
   },
-  /**
+  /*
    * 首页nav切换事件
-   */
   navSwitchSelected: function (eve) {
     switch (eve.currentTarget.dataset.id) {
       case '1':
@@ -61,15 +60,14 @@ Page({
         this.switchTabNav('../mine/mine');
         break;
     }
-  },
-  /**
+  },*/
+  /*
    * 切换tabNav事件
-   */
   switchTabNav: function (goToPageUrl) {
     wx.navigateTo({
       url: goToPageUrl
     });
-  },
+  },*/
   onLoad: function () {
     if (app.globalData.userInfo) {
       this.setData({
