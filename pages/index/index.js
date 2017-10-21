@@ -2,106 +2,31 @@ const app = getApp();
 
 Page({
   data: {
-    motto: 'Start imitate the eye app',
-    userInfo: {},
-    hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
-  },
-  /*
-   isHomeActive: true,
-   isFollowActive: false,
-   isFindActive: false,
-   isMineActive: false
-   */
-  //事件处理函数
-  bindViewTap: function() {
-    wx.navigateTo({
-      url: '../logs/logs'
-    })
-  },
-  /*
-   * 首页nav切换事件
-  navSwitchSelected: function (eve) {
-    switch (eve.currentTarget.dataset.id) {
-      case '1':
-        this.setData({
-          isHomeActive: true,
-          isFollowActive: false,
-          isFindActive: false,
-          isMineActive: false
-        });
-        this.switchTabNav('../index/index');
-        break;
-      case '2':
-        this.setData({
-          isHomeActive: false,
-          isFollowActive: true,
-          isFindActive: false,
-          isMineActive: false
-        });
-        this.switchTabNav('../follow/follow');
-        break;
-      case '3':
-        this.setData({
-          isHomeActive: false,
-          isFollowActive: false,
-          isFindActive: true,
-          isMineActive: false
-        });
-        this.switchTabNav('../find/find');
-        break;
-      default:
-        this.setData({
-          isHomeActive: false,
-          isFollowActive: false,
-          isFindActive: false,
-          isMineActive: true
-        });
-        this.switchTabNav('../mine/mine');
-        break;
-    }
-  },*/
-  /*
-   * 切换tabNav事件
-  switchTabNav: function (goToPageUrl) {
-    wx.navigateTo({
-      url: goToPageUrl
-    });
-  },*/
-  onLoad: function () {
-    if (app.globalData.userInfo) {
-      this.setData({
-        userInfo: app.globalData.userInfo,
-        hasUserInfo: true
-      })
-    } else if (this.data.canIUse){
-      // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
-      // 所以此处加入 callback 以防止这种情况
-      app.userInfoReadyCallback = res => {
-        this.setData({
-          userInfo: res.userInfo,
-          hasUserInfo: true
-        });
+    indicatorDots: true,
+    autoplay: true,
+    intervalTime: 3000,
+    durationTime: 1000,
+    imgUrls: [
+      'http://img.kaiyanapp.com/db6d68119a4cddb6d22a085f9afbcd92.jpeg?imageMogr2/quality/60/format/jpg',
+      'http://img.kaiyanapp.com/fca01d82e10a367cbb44808f2398524e.jpeg?imageMogr2/quality/60/format/jpg',
+      'http://img.kaiyanapp.com/0213fff11fa5dc0ffc868f8fffe0a2fa.jpeg?imageMogr2/quality/60/format/jpg'
+    ],
+    detailData: [
+      {
+        detailImg: 'http://img.kaiyanapp.com/9bbe8f164606b493274152c516b3fbe5.jpeg?imageMogr2/quality/60/format/jpg',
+        detailIcon: 'http://img.kaiyanapp.com/a52ebf1b9bc673561569ec60155968a7.png?imageMogr2/quality/60/format/jpg',
+        detailTitle: '[ 蜘蛛侠正确的结束方式 ]',
+        detailInfo: '精准吐槽大会开始了，英雄归来大团聚……'
+      },
+      {
+        detailImg: 'http://img.kaiyanapp.com/51a0caff5edb03ba154c3996c0cc6f7b.jpeg?imageMogr2/quality/60/format/jpg',
+        detailIcon: 'http://img.kaiyanapp.com/70716e90178d2ea35be9e550c26795f1.jpeg',
+        detailTitle: '荒诞短片：我该杀谁？',
+        detailInfo: '威客？威尔？傻傻的分不清楚，这到底是要玩儿啥？'
       }
-    } else {
-      // 在没有 open-type=getUserInfo 版本的兼容处理
-      wx.getUserInfo({
-        success: res => {
-          app.globalData.userInfo = res.userInfo;
-          this.setData({
-            userInfo: res.userInfo,
-            hasUserInfo: true
-          });
-        }
-      });
-    }
+    ]
   },
-  getUserInfo: function(e) {
-    console.log(e);
-    app.globalData.userInfo = e.detail.userInfo;
-    this.setData({
-      userInfo: e.detail.userInfo,
-      hasUserInfo: true
-    });
+  onLoad: function () {
+
   }
 });

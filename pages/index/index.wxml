@@ -1,34 +1,32 @@
-<!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+<view class="eye-home-contain">
+  <swiper class="home-contain-slider" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{intervalTime}}" duration="{{durationTime}}">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slider-image" style="width: 100%;"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="home-contain-more">
+    <text>更多编辑精选视频 ></text>
+  </view>
+
+  <view class="home-contain-detail">
+    <block wx:for="{{detailData}}">
+      <view class="contain-detail-show">
+        <image class="detail-show-img" src="{{item.detailImg}}" style="width: 100%;"></image>
+        <view class="contain-detail-intro">
+          <view class="contain-detail-img">
+            <image class="contain-detail-head" src="{{item.detailIcon}}"></image>
+          </view>
+          <view class="contain-detail-main">
+            <text class="detail-main-title">{{item.detailTitle}}</text>
+            <text class="detail-main-introduce">{{item.detailInfo}}</text>
+          </view>
+        </view>
+      </view>
     </block>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+  <view class="home-contain-load-more">
+    更多内容敬请期待~
   </view>
-  <!-- 小程序底部tabNav可以直接配置 -->
-  <!--<view class="tab-nav">-->
-    <!--<ul class="tab-nav-list">-->
-      <!--<li class="tab-nav-index" data-id="1" bindtap="navSwitchSelected">-->
-        <!--<i class="nav-index-icon {{isHomeActive ? 'active' : ''}}"></i>-->
-        <!--首页-->
-      <!--</li>-->
-      <!--<li class="tab-nav-follow" data-id="2" bindtap="navSwitchSelected">-->
-        <!--<i class="nav-follow-icon {{isFollowActive ? 'active' : ''}}"></i>-->
-        <!--关注-->
-      <!--</li>-->
-      <!--<li class="tab-nav-find" data-id="3" bindtap="navSwitchSelected">-->
-        <!--<i class="nav-find-icon {{isFindActive ? 'active' : ''}}"></i>-->
-        <!--发现-->
-      <!--</li>-->
-      <!--<li class="tab-nav-mine" data-id="4" bindtap="navSwitchSelected">-->
-        <!--<i class="nav-mine-icon {{isMineActive ? 'active' : ''}}"></i>-->
-        <!--我的-->
-      <!--</li>-->
-    <!--</ul>-->
-  <!--</view>-->
 </view>

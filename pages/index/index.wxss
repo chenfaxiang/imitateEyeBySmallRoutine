@@ -1,107 +1,81 @@
-/**index.wxss**/
-.userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.eye-home-contain,
+.home-contain-slider {
+  width: 100%;
+  height: 200px;
 }
 
-.userinfo-avatar {
-  width: 64px;
-  height: 64px;
-  margin: 10px;
-  border-radius: 50%;
-}
-
-.userinfo-nickname {
-  color: #aaa;
-}
-
-.usermotto {
-  margin-top: 200px;
-  text-align: center;
-}
-
-/** 页面底部的tab
-.tab-nav {
+.home-contain-more {
   width: 100%;
   height: 40px;
-  position: fixed;
-  bottom: 0;
-  left: 0;
   background: #fff;
-}
-
-.tab-nav-list {
-  width: 100%;
-  height: 40px;
-  border-top: 1px solid #ccc;
-  float: left;
-}
-
-.tab-nav-index,
-.tab-nav-follow,
-.tab-nav-find,
-.tab-nav-mine {
-  width: 25%;
-  height: 40px;
-  font-size: 12px;
-  color: #666;
-  line-height: 58px;
   text-align: center;
-  list-style: none;
-  cursor: pointer;
+  border-bottom: 1px solid #ccc;
+}
+
+.home-contain-more text {
+  font-size: 12px;
+  line-height: 40px;
+  color: #333;
+}
+
+.contain-detail-show {
+  width: 100%;
+  height: 250px;
+  margin-bottom: 10px;
+}
+.detail-show-img {
+  width: 100%;
+  height: 200px;
+}
+.contain-detail-intro {
+  width: 100%;
+  height: 50px;
+}
+.contain-detail-img {
+  width: 20%;
+  text-align: center;
+  margin-top: 8px;
   float: left;
-  position: relative;
 }
-.nav-index-icon,
-.nav-follow-icon,
-.nav-find-icon,
-.nav-mine-icon {
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  position: absolute;
-  top: 4px;
-  left: 50%;
-  margin-left: -8px;
+.contain-detail-head {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 16px;
+
 }
-/** 背景图片需要改成网络资源或者此图片字节在dom上用image标签显示
-.nav-index-icon {
-  background-image: url("http://opoze7s40.bkt.clouddn.com/eye-home.png");
+.contain-detail-main {
+  width: 80%;
+  float: left;
 }
-.nav-follow-icon {
-  background-image: url("http://opoze7s40.bkt.clouddn.com/eye-follow.png");
+.detail-main-title,
+.detail-main-introduce {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
-.nav-find-icon {
-  background-image: url("http://opoze7s40.bkt.clouddn.com/eye-find.png");
+.detail-main-title {
+  height: 28px;
+  font-size: 14px;
+  line-height: 28px;
+  color: #000;
+  font-weight: 600;
+  margin-top: 5px;
 }
-.nav-mine-icon {
-  background-image: url("http://opoze7s40.bkt.clouddn.com/eye-mine.png");
+.detail-main-introduce {
+  font-size: 12px;
+  line-height: 12px;
+  color: #ccc;
 }
 
-.nav-index-icon.active,
-.nav-follow-icon.active,
-.nav-find-icon.active,
-.nav-mine-icon.active {
-  background-repeat: no-repeat;
-  background-size: contain;
-  position: absolute;
-  top: 4px;
-  left: 50%;
-  margin-left: -8px;
+.home-contain-load-more {
+  width: 100%;
+  height: 50px;
+  font-size: 16px;
+  color: #ccc;
+  text-align: center;
+  line-height: 50px;
+  border-top: 1px solid #ccc;
 }
-
-.nav-index-icon.active {
-  background-image: url("http://opoze7s40.bkt.clouddn.com/eye-home-active.png");
-}
-.nav-follow-icon.active {
-  background-image: url("http://opoze7s40.bkt.clouddn.com/eye-follow-active.png");
-}
-.nav-find-icon.active {
-  background-image: url("http://opoze7s40.bkt.clouddn.com/eye-find-active.png");
-}
-.nav-mine-icon.active {
-  background-image: url("http://opoze7s40.bkt.clouddn.com/eye-mine-active.png");
-} **/
