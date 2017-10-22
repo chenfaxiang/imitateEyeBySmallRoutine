@@ -1,3 +1,21 @@
-<view class="container">
-  {{mineData}}
+<view class="eye-mine">
+  <view class="eye-mine-head">
+    <image class="mine-head-icon"></image>
+    <text class="mine-head-name">My app name</text>
+    <text class="mine-head-homepage">查看个人主页 ></text>
+    <view class="mine-head-choose">
+      <button class="head-choose-collect">收藏</button>
+      <button class="head-choose-comment">评论</button>
+    </view>
+  </view>
+  <view class="eye-mine-choice">
+    <scroll-view class="mine-choice-list">
+      <view class="choice-list-detail">我的消息</view>
+      <view class="choice-list-detail">我的关注</view>
+      <view class="choice-list-detail">我的缓存</view>
+      <view class="choice-list-detail">观看记录</view>
+      <view class="choice-list-detail">意见反馈</view>
+      <view class="choice-list-detail">我要投稿</view>
+    </scroll-view>
+  </view>
 </view>
