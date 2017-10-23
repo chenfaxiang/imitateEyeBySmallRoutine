@@ -37,5 +37,8 @@ Page({
   },
   onLoad: function () {
 
+  },
+  openVideo: function () {
+    console.log('新开页面播放视频');
   }
 });

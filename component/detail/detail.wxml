@@ -1,0 +1,3 @@
+<view>
+  <view class="slider-video-palyicon" bindtap="openVideo" style="background-image: url('images/icon_paly.png')"></view>
+</view>

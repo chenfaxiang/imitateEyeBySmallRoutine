@@ -1,9 +1,8 @@
 <view class="eye-home-contain">
   <swiper class="home-contain-slider" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{intervalTime}}" duration="{{durationTime}}">
     <block wx:for="{{imgUrls}}">
-      <swiper-item>
+      <swiper-item bindtap="openVideo">
         <image src="{{item.imgUrl}}" class="slider-image" style="width: 100%;"></image>
-        <video class="home-contain-video" src="{{item.videoUrl}}" id="myAudio{{index}}" controls></video>
       </swiper-item>
     </block>
   </swiper>
