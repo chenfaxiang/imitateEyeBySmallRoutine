@@ -2,7 +2,8 @@
   <swiper class="home-contain-slider" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{intervalTime}}" duration="{{durationTime}}">
     <block wx:for="{{imgUrls}}">
       <swiper-item>
-        <image src="{{item}}" class="slider-image" style="width: 100%;"></image>
+        <image src="{{item.imgUrl}}" class="slider-image" style="width: 100%;"></image>
+        <video class="home-contain-video" src="{{item.videoUrl}}" id="myAudio{{index}}" controls></video>
       </swiper-item>
     </block>
   </swiper>

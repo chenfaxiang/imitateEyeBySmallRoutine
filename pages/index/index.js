@@ -7,9 +7,18 @@ Page({
     intervalTime: 3000,
     durationTime: 1000,
     imgUrls: [
-      'http://img.kaiyanapp.com/db6d68119a4cddb6d22a085f9afbcd92.jpeg?imageMogr2/quality/60/format/jpg',
-      'http://img.kaiyanapp.com/fca01d82e10a367cbb44808f2398524e.jpeg?imageMogr2/quality/60/format/jpg',
-      'http://img.kaiyanapp.com/0213fff11fa5dc0ffc868f8fffe0a2fa.jpeg?imageMogr2/quality/60/format/jpg'
+      {
+        imgUrl: 'http://img.kaiyanapp.com/db6d68119a4cddb6d22a085f9afbcd92.jpeg?imageMogr2/quality/60/format/jpg',
+        videoUrl: 'http://opoze7s40.bkt.clouddn.com/dog.mp4'
+      },
+      {
+        imgUrl: 'http://img.kaiyanapp.com/fca01d82e10a367cbb44808f2398524e.jpeg?imageMogr2/quality/60/format/jpg',
+        videoUrl: 'http://opoze7s40.bkt.clouddn.com/sky.mp4'
+      },
+      {
+        imgUrl: 'http://img.kaiyanapp.com/0213fff11fa5dc0ffc868f8fffe0a2fa.jpeg?imageMogr2/quality/60/format/jpg',
+        videoUrl: 'http://opoze7s40.bkt.clouddn.com/sport.mp4'
+      }
     ],
     detailData: [
       {
