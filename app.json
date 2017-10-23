@@ -4,7 +4,8 @@
     "pages/logs/logs",
     "pages/follow/follow",
     "pages/find/find",
-    "pages/mine/mine"
+    "pages/mine/mine",
+    "pages/detail/detail"
   ],
   "window":{
     "backgroundTextStyle":"light",

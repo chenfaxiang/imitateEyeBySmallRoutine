@@ -1,5 +1,9 @@
-const app = getApp();
-
+/**
+ * @author        chenfaxiang
+ * @email         998faxiang@gmail.com
+ * @date          2017/10/20
+ * @description   {首页}
+ **/
 Page({
   data: {
     indicatorDots: true,
@@ -38,7 +42,10 @@ Page({
   onLoad: function () {
 
   },
-  openVideo: function () {
-    console.log('新开页面播放视频');
+  openVideo: function (e) {
+    const nowClickItemIndex = e.currentTarget.dataset.id;
+    wx.navigateTo({
+      url: '../detail/detail?list=' + nowClickItemIndex
+    });
   }
 });

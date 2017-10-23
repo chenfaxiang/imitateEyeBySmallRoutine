@@ -1,0 +1,27 @@
+<view class="eye-detail">
+  <view class="eye-detail-video">
+    <video class="detail-video-info" src="http://opoze7s40.bkt.clouddn.com/{{currentVideoName}}" id="myVideo"></video>
+  </view>
+  <view class="eye-detail-content">
+    <text class="content-title">特条内容 | 内容标题位置</text>
+    <text class="content-info">#预警 / 02'50'' / eye精选</text>
+    <text class="content-introduce">2001年开始，BBC推出经典水下世界纪录片，多年之后的续作，仍由原摄影师担任，共8集，后续不断放出。</text>
+    <view class="content-statistic-list">
+      <text class="statistic-liked">892</text>
+      <text class="statistic-share">1200</text>
+      <text class="statistic-reply">20</text>
+    </view>
+    <view class="content-video-list">
+      <text class="video-list-title">预告类最新视频 > </text>
+      <block wx:for="[1,2,3,4,5]">
+        <view class="video-list-item">
+          <image class="video-list-item-img" src=""></image>
+          <view class="video-list-detail">
+            <text class="video-list-detail-title">《黑豹》预告，让地球人穿越五维世界</text>
+            <text class="video-list-detail-time">#预告 / 02'10''</text>
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>
+</view>
