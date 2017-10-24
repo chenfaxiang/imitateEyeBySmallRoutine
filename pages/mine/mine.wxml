@@ -4,8 +4,8 @@
     <text class="mine-head-name">My app name</text>
     <text class="mine-head-homepage">查看个人主页 ></text>
     <view class="mine-head-choose">
-      <button class="head-choose-collect">收藏</button>
-      <button class="head-choose-comment">评论</button>
+      <a class="head-choose-collect" href="javascript:;">收藏</a>
+      <a class="head-choose-comment" href="javascript:;">评论</a>
     </view>
   </view>
   <view class="eye-mine-choice">
