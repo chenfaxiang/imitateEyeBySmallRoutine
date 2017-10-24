@@ -13,7 +13,7 @@
     </view>
     <view class="content-video-list">
       <text class="video-list-title">预告类最新视频 > </text>
-      <block wx:for="[1,2,3,4,5]">
+      <block wx:for="[1,2,3]">
         <view class="video-list-item">
           <image class="video-list-item-img" src=""></image>
           <view class="video-list-detail">
