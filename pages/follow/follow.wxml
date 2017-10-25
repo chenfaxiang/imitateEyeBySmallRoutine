@@ -1,4 +1,20 @@
-<!--follow.wxml-->
-<view class="container">
-  {{followData}}
+<view class="eye-follow">
+  <view class="follow-top">
+    <text class="follow-top-text">我的关注</text>
+    Subscription
+  </view>
+  <view class="followed-list">
+    <block wx:for="{{followedData}}">
+      <image class="followed-list-img" src="{{item.followImg}}"></image>
+      <view class="followed-list-intro">
+        <view class="list-intro-img">
+          <image class="list-intro-icon" src="{{item.followIcon}}"></image>
+        </view>
+        <view class="list-intro-text">
+          <text class="list-intro-text-title">{{item.followIntroTitle}}</text>
+          <text class="list-intro-text-brand">{{item.followIntroBrand}}</text>
+        </view>
+      </view>
+    </block>
+  </view>
 </view>
