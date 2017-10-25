@@ -13,12 +13,12 @@
     </view>
     <view class="content-video-list">
       <text class="video-list-title">预告类最新视频 > </text>
-      <block wx:for="[1,2,3]">
+      <block wx:for="{{recommendData}}">
         <view class="video-list-item">
-          <image class="video-list-item-img" src=""></image>
+          <image class="video-list-item-img" src="{{item.recommendImg}}"></image>
           <view class="video-list-detail">
-            <text class="video-list-detail-title">《黑豹》预告，让地球人穿越五维世界</text>
-            <text class="video-list-detail-time">#预告 / 02'10''</text>
+            <text class="video-list-detail-title">{{item.recommendTitle}}</text>
+            <text class="video-list-detail-time">{{item.recommendInfo}}</text>
           </view>
         </view>
       </block>

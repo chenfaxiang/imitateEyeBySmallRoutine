@@ -13,15 +13,18 @@ Page({
     imgUrls: [
       {
         imgUrl: 'http://img.kaiyanapp.com/db6d68119a4cddb6d22a085f9afbcd92.jpeg?imageMogr2/quality/60/format/jpg',
-        videoUrl: 'http://opoze7s40.bkt.clouddn.com/dog.mp4'
+        imgTitle: '清新的世界，需要探索',
+        imgDetail: '这就是探索的理由'
       },
       {
         imgUrl: 'http://img.kaiyanapp.com/fca01d82e10a367cbb44808f2398524e.jpeg?imageMogr2/quality/60/format/jpg',
-        videoUrl: 'http://opoze7s40.bkt.clouddn.com/sky.mp4'
+        imgTitle: '虚无缥缈星空，一望无垠',
+        imgDetail: '星空的世界是如此美妙'
       },
       {
         imgUrl: 'http://img.kaiyanapp.com/0213fff11fa5dc0ffc868f8fffe0a2fa.jpeg?imageMogr2/quality/60/format/jpg',
-        videoUrl: 'http://opoze7s40.bkt.clouddn.com/sport.mp4'
+        imgTitle: '运动需要勇气，坚持不懈',
+        imgDetail: '总算搞清楚了为何如此轻松……'
       }
     ],
     detailData: [

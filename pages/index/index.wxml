@@ -3,6 +3,10 @@
     <block wx:for="{{imgUrls}}">
       <swiper-item bindtap="openVideo" data-id="{{index}}">
         <image src="{{item.imgUrl}}" class="slider-image" style="width: 100%;"></image>
+        <view class="contain-slider-introduce">
+          <text class="contain-slider-title">{{item.imgTitle}}</text>
+          <text class="contain-slider-intro">{{item.imgDetail}}</text>
+        </view>
       </swiper-item>
     </block>
   </swiper>
