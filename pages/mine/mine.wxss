@@ -67,10 +67,22 @@
   top: 5px;
   right: 0;
 }
-.head-choose-collect {
-
+.collect-icon,
+.comment-icon {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  margin-bottom: -6px;
+  margin-right: 5px;
 }
-.head-choose-comment {}
+.collect-icon {
+  background: url("http://opoze7s40.bkt.clouddn.com/eye-collect.png") no-repeat;
+  background-size: cover;
+}
+.comment-icon {
+  background: url("http://opoze7s40.bkt.clouddn.com/eye-reply.png") no-repeat;
+  background-size: cover;
+}
 
 .eye-mine-choice {
   width: 100%;
